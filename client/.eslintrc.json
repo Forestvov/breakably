@@ -1,0 +1,25 @@
+{
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "next",
+    "plugin:react-hooks/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "rules": {
+    "semi": [2, "never"],
+    "no-unused-vars": "error",
+    "indent": [
+      "error", 2
+    ],
+    "@next/next/no-img-element": "error"
+  },
+  "plugins": [
+    "jsx-a11y"
+  ]
+}
