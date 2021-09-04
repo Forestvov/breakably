@@ -1,5 +1,42 @@
-.container{
+html, body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
   max-width: 1350px;
   padding: 0 15px;
   width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
