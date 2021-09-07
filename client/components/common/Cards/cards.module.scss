@@ -1,0 +1,35 @@
+@use 'styles/use/color';
+
+.cards {
+
+  &_top {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &_title {
+    font-weight: 500;
+    color: color.$gray;
+    margin-right: 30px;
+    font-size: 18px;
+  }
+
+  &_more{
+    color: color.$green;
+
+    svg{
+      margin-left: 5px;
+
+      path{
+        fill: color.$green;
+      }
+    }
+  }
+
+  &_main {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+  }
+}
