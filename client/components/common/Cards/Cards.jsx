@@ -2,8 +2,6 @@ import React from 'react'
 
 import s from './cards.module.scss'
 
-import DropArrow from "../../icons/DropArrow"
-
 const Cards = props => {
   return (
     <div className={s.cards}>
