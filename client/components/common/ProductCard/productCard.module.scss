@@ -1,0 +1,94 @@
+@use '/styles/use/color';
+
+.item {
+  width: 25%;
+  border: 1px solid color.$border;
+  box-shadow: -8px -8px 15px #FFFFFF, 8px 8px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  background-color: color.$bgCard;
+  padding: 20px 20px 30px;
+  display: flex;
+  flex-direction: column;
+
+  &_img {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    margin-bottom: 25px;
+
+    img {
+      position: absolute;
+      border-radius: 5px;
+    }
+  }
+
+  &_title a {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: color.$gray-dark;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &_descr {
+    color: color.$gray-white;
+    font-size: 16px;
+    line-height: 21px;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+
+  &_price {
+    color: color.$gray-dark;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+
+  &_actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  &_toCart{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid color.$borderBtn;
+    border-radius: 10px;
+    transition: all 400ms;
+
+    &:hover{
+      border-color: color.$green;
+
+      svg path{
+        fill: color.$green;
+      }
+    }
+
+    svg{
+      width: 27px;
+      height: 27px;
+
+      path{
+        transition: all 400ms;
+      }
+    }
+
+    &.current{
+      background-color: color.$green;
+      border-color: color.$green;
+
+      svg path{
+        fill: #fff;
+      }
+    }
+  }
+}

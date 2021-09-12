@@ -14,7 +14,7 @@ const Cards = props => {
         {!props.noMore &&
         <button className={s.cards_more}>
           Ещё
-          <DropArrow/>
+          {/*<DropArrow/>*/}
         </button>
         }
       </div>

@@ -1,0 +1,19 @@
+@use '/styles/use/color';
+
+.variations{
+  display: flex;
+  align-items: center;
+}
+
+.variation{
+  padding: 4px 12px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 400ms;
+}
+
+.current{
+  border-color: color.$green;
+}
