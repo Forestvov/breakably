@@ -1,8 +1,12 @@
 import React from 'react'
 import Head from "next/head"
+import {Fade} from "react-awesome-reveal"
 
 import s from './page.module.scss'
+
 import Header from "../../common/Header/Header"
+import AppDescr from "../../common/AppDescr/AppDescr"
+import Footer from "../../common/Footer/Footer"
 
 const Page = props => {
   return (
@@ -18,7 +22,12 @@ const Page = props => {
         <div className="container">
           {props.children}
         </div>
+
+        {props.homePage && <Fade><AppDescr/></Fade>}
+
       </main>
+
+      <Footer/>
     </>
   )
 }

@@ -1,0 +1,61 @@
+@use 'styles/use/color';
+
+.footer{
+  background-color: color.$gray-dark;
+  padding: 100px 0 130px;
+}
+
+.footer__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__col{
+  a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 400ms ease;
+
+    svg path{
+      transition: fill 400ms ease;
+    }
+
+    &:hover{
+      color: color.$green;
+      svg path{
+        fill: color.$green;
+      }
+    }
+  }
+}
+
+.footer__link{
+  a + a{
+    margin-left: 45px;
+  }
+}
+
+.footer__social{
+  a + a{
+    margin-left: 20px;
+  }
+}
+
+.footer__phone{
+  a{
+    display: flex;
+    align-items: center;
+
+    svg{
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+
+      path{
+        fill: #fff;
+      }
+    }
+  }
+}
