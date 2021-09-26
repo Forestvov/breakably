@@ -1,11 +1,14 @@
 import React from 'react'
+import {useRouter} from "next/router"
 
 import s from './btnMore.module.scss'
 
-const BtnMore = props => {
+const BtnMore = ({text, href = '#'}) => {
+  const router = useRouter()
+
   return (
-    <button className={s.btn}>
-      {props.text}
+    <button onClick={() => router.push(href)} className={s.btn}>
+      {text}
     </button>
   )
 }

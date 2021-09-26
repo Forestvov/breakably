@@ -1,0 +1,63 @@
+@use 'styles/use/color';
+
+.counter{
+  margin-bottom: 25px;
+
+  span{
+    font-size: 18px;
+    font-weight: 500;
+    color: color.$borderBtn;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+}
+
+.input{
+  display: flex;
+  align-items: center;
+  height: 26px;
+  margin: 0 5px;
+
+  button{
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid color.$green;
+  }
+
+  input{
+    width: 45px;
+    text-align: center;
+    outline: none;
+    border: none;
+  }
+}
+
+
+.btns {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  button {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 45px;
+    border-radius: 5px;
+    padding: 0 32px;
+  }
+}
+
+.buy{
+  background-color: color.$green;
+  color: #fff;
+}
+
+.addToCart{
+  color: color.$green;
+  border: 1px solid rgba(color.$green-white, .53);
+}

@@ -21,6 +21,7 @@ const ProductCard = props => {
 
   return (
     <div className={s.item}>
+      {props.tag && <div className={s.badge}>{props.tag}</div>}
       <div className={s.item_img}>
         <Link href="/product/1">
           <a>
@@ -29,7 +30,7 @@ const ProductCard = props => {
         </Link>
       </div>
       <div className={s.item_title}>
-        <Link href="#">
+        <Link href="/product/1">
           <a>
             {props.title}
           </a>
@@ -46,7 +47,7 @@ const ProductCard = props => {
         setSelectedVariation={setSelectedVariation}
         variations={variations}/>
       <div className={s.item_actions}>
-        <BtnMore text="Подробнее"/>
+        <BtnMore href="/product/1" text="Подробнее"/>
         <button
           className={cn(s.item_toCart, inCart && s.current)}
           onClick={() => setInCart(true)}>
