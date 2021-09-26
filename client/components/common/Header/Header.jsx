@@ -6,7 +6,7 @@ import s from './header.module.scss'
 import Logo from "../../icons/logo"
 import Phone from "../../icons/Phone"
 import Cart from "../../icons/Cart"
-import User from "../../icons/User"
+import User from "../../icons/User/User"
 import Search from "../../icons/Search"
 import DropArrow from "../../icons/DropArrow"
 

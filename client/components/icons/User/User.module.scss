@@ -1,0 +1,41 @@
+@use '/styles/use/color';
+
+.user__inner{
+  position: relative;
+}
+
+.user__popup{
+  position: absolute;
+  width: 285px;
+  padding: 25px 20px 35px;
+  background-color: #fff;
+  box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  right: 0;
+  z-index: 1;
+  top: 45px;
+
+  button{
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.signin{
+  background-color: color.$green;
+  color: #fff;
+  transition: color .4s;
+
+  &:hover{
+    color: color.$gray !important;
+  }
+}
+
+.signup{
+  margin-top: 15px;
+  border: 1px solid color.$borderBtn;
+}

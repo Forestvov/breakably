@@ -40,3 +40,27 @@ h1, h2, h3, h4, p {
 a {
   text-decoration: none;
 }
+
+.popup{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup-enter {
+  opacity: 0;
+}
+
+.popup-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.popup-exit {
+  opacity: 1;
+}
+
+.popup-exit-active {
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
+}

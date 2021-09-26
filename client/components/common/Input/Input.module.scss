@@ -1,0 +1,29 @@
+@use 'styles/use/color';
+
+.input{
+  width: 100%;
+  display: block;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid color.$borderBtn;
+  background-color: color.$border;
+  padding: 0 20px;
+  transition: border-color .4s;
+  outline: none;
+
+  & + .input{
+    margin-top: 20px;
+  }
+}
+
+.error{
+  border-color: #EB5757;
+}
+
+.error__text{
+  margin: 15px 0;
+  color: #EB5757;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+}

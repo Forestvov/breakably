@@ -1,0 +1,52 @@
+@use 'styles/use/color';
+
+.form {
+  max-width: 650px;
+  width: 100%;
+  padding: 45px 40px 50px;
+  box-shadow: 0px 30px 50px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border: 1px solid color.$border;
+  margin: 0 auto 245px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.top__tile {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.close {
+  transform: scale(1.1) rotate(45deg);
+}
+
+.form_btns{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+  button,a{
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    width: 245px;
+  }
+}
+
+.signin{
+  background-color: color.$green;
+  color: #fff;
+  font-weight: 600;
+}
+
+.signup{
+  border: 1px solid color.$borderBtn;
+  font-weight: 600;
+  color: color.$gray;
+}
