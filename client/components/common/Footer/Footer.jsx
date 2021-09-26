@@ -13,11 +13,8 @@ const Footer = () => {
       <div className="container">
         <div className={s.footer__inner}>
           <div className={cn(s.footer__col, s.footer__link)}>
-            <Link href="/">
-              <a>Оплата</a>
-            </Link>
-            <Link href="/">
-              <a>Доставка</a>
+            <Link href="/delivery">
+              <a>Оплата и Доставка</a>
             </Link>
           </div>
           <div className={cn(s.footer__col, s.footer__social)}>
